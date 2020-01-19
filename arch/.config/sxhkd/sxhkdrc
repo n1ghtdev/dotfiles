@@ -1,0 +1,47 @@
+alt + Return
+    termite
+
+alt + d
+    j4-dmenu-desktop --dmenu="rofi -i -dmenu -opacity 90"
+alt + Escape
+    pkill -USR1 -x sxhkd
+
+alt + F11
+    xbacklight -dec 10
+
+alt + F12
+    xbacklight -inc 10
+
+alt + shift + r
+    ~/.config/bspwm/bspwmrc
+
+alt + g
+    bspc node -s biggest
+
+alt + {_,shift + }q
+    bspc node -{c,k}
+
+alt + f
+    bspc desktop -l next
+
+alt + {semicolon,v,r}
+    bspc node -p {east,south,cancel}
+
+alt + space
+    bspc node -t {floating,tiled}
+
+alt + {_,shift + }{h,j,k,l}
+    bspc node -{f,s} {west,south,north,east}
+
+alt + {_,shift + }Tab
+    bspc node -f {next.local,prev.local}
+
+alt + {_,shift + }{1-9,0}
+    bspc {desktop -f,node -d} '^{1-9,10}'
+
+ctrl + shift + {h,j,k,l}
+    bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+ctrl + shift + alt + {h,j,k,l}
+    bspc node -z {right -20 0,top 0 20,bottom 0 -20, left 20 0}
+
