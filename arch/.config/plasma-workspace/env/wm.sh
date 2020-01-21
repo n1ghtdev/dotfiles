@@ -1,1 +1,3 @@
-/home/nt/.config/i3kde.sh
+export KDEWM=/usr/bin/i3
+
+picom & --config ~/.config/picom/picom.conf
