@@ -1,0 +1,11 @@
+[user]
+	email = extr1m7777@gmail.com
+	name = n1ghtdev
+
+[alias]
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	cob = checkoub -b
+	last = log -1 HEAD
